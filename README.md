@@ -1,118 +1,65 @@
-# Phase 1 Project
+## Creating Successful Original Content
+### First Thoughts and Hypothesis
 
-## Introduction
+In the recent years, the popularity of streaming services has been revolutionized by big tech companies such as YouTube, Netflix, HBO and many others. Consumer's habits have changed in response to this. Why pay for movie tickets at the theater when you can stay home and watch whatever you'd like? 
 
-In this lesson, we review the guidelines for the Phase 1 Project.
+Because of this trend, we decided to look at success rates of movies and TV shows in the past years to better advise Microsoft in creating successful orginal content. To determine success, it's necessary to look at key areas of the entertainment industry - viewership, ratings, and award nominations. After researching these three areas, we've determined the best route to successful original content is by creating a TV series. 
 
-## Objectives
+### Question 2: Which network or streaming service would best support our series?   
+#### Which network has received the most award nominations in the last four years? 
 
-You will be able to:
+Awards shows are a great way to evaluate the success of a TV series. The Emmy's are well-known and much talked about, making this the perfect Awards show to help us determine which networks would be the best platform for success.  
 
-* Start your Phase 1 Project
-* Check that your project meets the requirements
-* Submit your project materials in Canvas
-* Prepare for your project review
+After scraping shows and actors nominated for major award from the Emmy's site, it was obvious that several networks have been more successful than others over the last few years. As you can see in the chart below, HBO, Netflix and Prime Video have out-performed all other networks with clearly HBO in the lead. 
 
-## Project Overview
+![TotalNominationsAllNetworks](https://github.com/drrausch/dsc-phase-1-project-online/blob/dana_branch/Images/TotalNominationsAllNetworks.png)
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+#### Which networks are receiving the most independent show and actor nominations? 
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-online/master/awesome.gif)
+Looking at the top three winningest networks, we can see that HBO not only has the highest number of show nominations, but also the most individual actor nominations. 
 
-All that remains in Phase 1 is to put our newfound data science skills to use with a large project! You should expect this project to take between 20 and 25 hours of solid, focused effort. If you're done way quicker, go back and dig in deeper or try some of the optional "Level Up" suggestions. If you're worried that you're going to get to 30 hours and still not even have the data imported, reach out to an instructor in Slack ASAP to get some help!
+Of the two award nominations available, the first being a show nomination and the second an actor nomination, HBO is clearly leading the pack in both. Netflix succeeds in show nominations, but has few actor nominations. The below graph also shows that while Netflix has received many nominations for multiple shows, those shows are only nominated for a maximum of 3 awards while some HBO shows have been nominated twice that amount.
 
-### Business Problem
+![NominationsByNetwork](https://github.com/drrausch/dsc-phase-1-project-online/blob/dana_branch/Images/NominationsByNetwork.png)
 
-Microsoft sees all the big companies creating original video content, and they want to get in on the fun. They have decided to create a new movie studio, but the problem is they don’t know anything about creating movies. They have hired you to help them better understand the movie industry.
-Your team is charged with exploring what type of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+#### Finally, which network has had the most shows nominated within the last two years? 
 
-### The Data
+Taking a look at the past two years, we can see that seven HBO shows, nine Netflix shows, and only two Prime Video shows have been nominated for an Emmy. One could argue that Netflix has been the most successful considering they have a higher number of shows nominated, however you can see below that the six HBO shows were nominated for a larger number of awards than the Netflix shows. This means that the six HBO shows are more successful than the nine Netflix shows. 
 
-In the folder `zippedData` are movie datasets from:
+![TopNetworkShows](https://github.com/drrausch/dsc-phase-1-project-online/blob/dana_branch/Images/TopNetworkShows.png)
 
-* Box Office Mojo
-* IMDB
-* Rotten Tomatoes
-* TheMovieDB.org
+#### We believe that HBO is the best network to host Microsoft's new original TV series.
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed, we recommend you use only the following data files:
+Above, we presented three arguments that present HBO as the clear choice: 
+1. From 2017-2020, HBO shows have collected more nominations than the competing networks 
+2. HBO not only has the largest number of aggregate nominations, they also are more successful at both a series and actor leve 
+3. While Netflix has had more shows nominated for awards in the last two years, HBO is close behind and shows a higher success rate per show than Netflix 
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+### Question 3: What type of show will be profitable? 
+#### Insight
 
-## Deliverables
+In todays subscription structured business models, the most important variable that determines success is viewership. Here I wanted to investigate total views by genre to detemine which genres generate the most views.
 
-There are four deliverables for this project:
+#### Which genres generate the most views? 
 
-1. A **GitHub repository**
-2. A **Jupyter Notebook**
-3. A non-technical presentation **slide deck**
-4. A non-technical presentation **recording**
+With this in mind, I found viewership numbers from four popular networks. From this analysis there were five genres with the most views for TV series. They are as follows:
 
-Keep in mind that the audience for these deliverables is not only your teacher, but also potential employers. Employers will look at your project deliverables to evaluate multiple skills, including coding, modeling, communication, and domain knowledge. You will want to polish these as much as you can, both during the course and afterwards.
+1. Drama
+2. Comedy
+3. Crime
+4. Action
+5. Fantasy
 
-### GitHub Repository
+![TopGenres](https://github.com/drrausch/dsc-phase-1-project-online/blob/dana_branch/Images/TopGenres.png)
 
-Your GitHub repository is the public-facing version of your project that your instructors and potential employers will see - make it as accessible as you can. At a minimum, it should contain all your project files and a README.md file that summarizes your project and helps visitors navigate the repository.
+#### Which genre should Microsoft choose for their new TV series? 
 
-### Jupyter Notebook
+It's clear that Drama is the top genre for all four networks. Comedy, Action and Crime genres all trail close behind and could also be worth investment. 
 
-Your Jupyter Notebook is the primary source of information about your analysis. At a minimum, it should contain or import all of the code used in your project and walk the reader through your project from start to finish. You may choose to use multiple Jupyter Notebooks in your project, but you should have one that provides a full project overview as a point of entry for visitors.
+In order to break into this industry, I would recommend developing a tv series with the genre Drama being the foundation. It's shown below that Drama drives the highest number of viewers, which will help meet demand and increase subscription numbers. 
 
-For this project, your Jupyter Notebook should meet the following specifications:
+![GenresByNetwork](https://github.com/drrausch/dsc-phase-1-project-online/blob/dana_branch/Images/GenresByNetwork.png)
 
-#### Organization/Code Cleanliness
+#### Future work
 
-* The notebook should be well organized, easy to follow,  and code should be commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code.  All functions have docstrings that act as professional-quality documentation
-* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
-
-#### Visualizations & EDA
-
-* Your project contains at least 4 meaningful data visualizations, with corresponding interpretations. All visualizations are well labeled with axes labels, a title, and a legend (when appropriate)  
-* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook.
-    * **Level Up**: Each question is clearly answered with a visualization that makes the answer easy to understand.   
-* Your notebook should contain 1 - 2 paragraphs briefly explaining your approach to this project.
-
-### Non-Technical Presentation Slides and Recording
-
-Your non-technical presentation is your opportunity to communicate clearly and concisely about your project and it's real-world relevance. The target audience should be people with limited technical knowledge who may be interested in leveraging your project. For Phase 1, these would be Microsoft executives interested in making decisions about movie development.
-
-Your presentation should:
-
-* Contain between 5 - 10 professional-quality slides.  
-    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text.
-* Take no more than 5 minutes to present.   
-* Avoid technical jargon and explain the results in a clear, actionable way for non-technical audiences.
-
-We recommend using Google Slides, PowerPoint or Keynote to create your presentation slides. We recommend using Zoom to record your live presentation to a local video file ([instructions here][]) - other options include Quicktime, PowerPoint, or Nimbus. Video files must be under 500 MB and formatted as 3GP, ASF, AVI, FLV, M4V, MOV, MP4, MPEG, QT, or WMV.
-
-## Getting Started
-
-Please start by reviewing this document. If you have any questions, please ask them in Slack ASAP so (a) we can answer the questions and (b) so we can update this document to make it clearer.
-
-**When you start on the project, reach out to an instructor immediately via Slack to let them know and schedule your project review.** If you're not sure who to schedule with, please ask in your cohort channel in Slack.
-
-Once you're done with the numbered topics in Phase 1, please start on the project. Do that by forking [the Phase 1 Project Repository][], cloning it locally, and working in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-We also recommend you check out [this project template and example][]. You can use this template for your project repository and presentation.
-
-## Project Submission and Review
-
-Review [the Phase Project Submission and Review guidance][] to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-**Please note: We need to receive your complete submission at least 24 hours before your review to confirm that you are prepared for the review. If you wish to revise your submission, please do so no later than 3 hours before your review so that we can have time to look at your updated materials.**
-
-## Summary
-
-The end-of-phase projects and project reviews are a critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with.
-
-The projects are serious and important - they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible.
-
-Finally, this is your first project. We don't expect you to remember all of the terms or to get all of the answers right. If in doubt, be honest. If you don't know something, say so. If you can't remember it, just say so. It's very unusual for someone to complete a project review without being asked a question they're unsure of, we know you might be nervous which may affect your performance. Just be as honest, precise and focused as you can be, and you'll do great!
-
-[this project template and example]: https://github.com/learn-co-curriculum/dsc-project-template
-[the Phase 1 Project Repository]: https://github.com/learn-co-curriculum/dsc-phase-1-project-online
-[instructions here]: https://support.zoom.us/hc/en-us/articles/201362473-Local-recording
-[the Phase Project Submission and Review guidance]: https://github.com/learn-co-curriculum/dsc-project-submissions-online
+I would like to investigate the best combination of genres with Drama being the core element of the combination and determine which combination provides the most views.
